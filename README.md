@@ -26,7 +26,7 @@ _Note_: Password file creation can be avoided removing this `--password ./pwd.tx
 - Create a genesis.json file. You could get an example from [geth - private network config](https://geth.ethereum.org/docs/fundamentals/private-network). Or you could use the included genesis file within this repo.
 
 - Add your node address to the "extradata" param.
-  - That param starts with "0x" and 64 times "0".
+  - That param starts with "0x" + 64 times "0".
   - Then the nodes addresses (40 characters each)
   - Then 130 times "0"
   - Total extradata string length should be 236 with 1 node address, 276 with 2, 316 with 3, etc.
@@ -73,10 +73,6 @@ geth --authrpc.port <AUTH_RPC_PORT> --ipcpath "<IPC_PATH>" --datadir <DATA_DIREC
 - `<PEER_PORT>`: Network listening port. Differentiate this port for each node on the same network.
 - `<YOUR_ENODE>`: enode you got from the previous step. Should be the same for every node.
 
-### Follow up example
-
-Open [createNode.js file](./createNode.js) to see example commands
-
 ## Access nodes
 
 Run to open a console that interacts with the desired node
@@ -90,5 +86,8 @@ geth attach http://localhost:<NODE_PORT>
 You can get a list of namespaces commands and how to use them here: [JSON-RPC Namespaces Docs](https://geth.ethereum.org/docs/interacting-with-geth/rpc)
 
 ---
+## Follow up example
 
-For more info, read [Geth Private Network Documentation](https://geth.ethereum.org/docs/fundamentals/private-network). This part of the docs was a summary of that.
+Open [createNode.js file](./createNode.js) to see step by step example commands
+
+For more info, read [Geth Private Network Documentation](https://geth.ethereum.org/docs/fundamentals/private-network).
