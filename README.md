@@ -1,6 +1,6 @@
 # ETH Private Netowork
 
-Pproject made to understand how to config and run interoperable eth nodes.
+Project made to understand how to config and run interoperable eth nodes.
 
 ## Pre requisites
 
