@@ -1,4 +1,4 @@
-# ETH Private Netowork
+# ETH Private Network
 
 Project made to understand how to config and run interoperable eth nodes.
 
